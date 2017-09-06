@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{FC9F8A63-C24E-4437-95A2-637967ED7EA2}</ProjectGuid>
+    <RootNamespace>THLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\Common\include\TH;$(SolutionDir)\src\Common\include\TH\generic;$(SolutionDir)\src\Common\include\TH\generic\simd;$(SolutionDir)\src\Common\include\TH\vector;$(SolutionDir)\src\Common\include\TH;$(SolutionDir)\src\Common\include\TH\generic;$(SolutionDir)\src\Common\include\TH\generic\simd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_SSE4_1;USE_SSE4_2;__AVX__;__AVX2__;USE_AVX2;USE_AVX;USE_SSE3;USE_SSE2;WIN32;_WINDOWS;USE_GCC_GET_CPUID;TH_HAVE_THREAD;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;USE_MSC_ATOMICS=1;CMAKE_INTDIR="Release";TH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4244;4101;4098;4018;4267%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\Common\include\TH;$(SolutionDir)\src\Common\include\TH\generic;$(SolutionDir)\src\Common\include\TH\generic\simd;$(SolutionDir)\src\Common\include\TH\vector;$(SolutionDir)\src\Common\include\TH;$(SolutionDir)\src\Common\include\TH\generic;$(SolutionDir)\src\Common\include\TH\generic\simd;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_SSE4_1;USE_SSE4_2;__AVX__;__AVX2__;USE_AVX2;USE_AVX;USE_SSE3;USE_SSE2;WIN32;_WINDOWS;USE_GCC_GET_CPUID;TH_HAVE_THREAD;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;USE_MSC_ATOMICS=1;CMAKE_INTDIR="Release";TH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4244;4101;4098;4018;4267%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\Common\include\TH;$(SolutionDir)\src\Common\include\TH\generic;$(SolutionDir)\src\Common\include\TH\generic\simd;$(SolutionDir)\src\Common\include\TH\vector;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_SSE4_1;USE_SSE4_2;__AVX__;__AVX2__;USE_AVX2;USE_AVX;USE_SSE3;USE_SSE2;WIN32;_WINDOWS;USE_GCC_GET_CPUID;TH_HAVE_THREAD;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;USE_MSC_ATOMICS=1;CMAKE_INTDIR="Release";TH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4244;4101;4098;4018;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAs>CompileAsC</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\Common\include\TH;$(SolutionDir)\src\Common\include\TH\generic;$(SolutionDir)\src\Common\include\TH\generic\simd;$(SolutionDir)\src\Common\include\TH\vector;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_SSE4_1;USE_SSE4_2;__AVX__;__AVX2__;USE_AVX2;USE_AVX;USE_SSE3;USE_SSE2;WIN32;_WINDOWS;USE_GCC_GET_CPUID;TH_HAVE_THREAD;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;USE_MSC_ATOMICS=1;CMAKE_INTDIR="Release";TH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4244;4101;4098;4018;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAs>CompileAsC</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\include\TH\THAllocator.h" />
+    <ClInclude Include="..\Common\include\TH\THAtomic.h" />
+    <ClInclude Include="..\Common\include\TH\THBlas.h" />
+    <ClInclude Include="..\Common\include\TH\THHalf.h" />
+    <ClInclude Include="..\Common\include\TH\THLapack.h" />
+    <ClInclude Include="..\Common\include\TH\THLogAdd.h" />
+    <ClInclude Include="..\Common\include\TH\THMath.h" />
+    <ClInclude Include="..\Common\include\TH\THRandom.h" />
+    <ClInclude Include="..\Common\include\TH\THSize.h" />
+    <ClInclude Include="..\Common\include\TH\THStorage.h" />
+    <ClInclude Include="..\Common\include\TH\THTensor.h" />
+    <ClInclude Include="..\Common\include\TH\THTensorApply.h" />
+    <ClInclude Include="..\Common\include\TH\THVector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\src\TH\generic\simd\convolve.c" />
+    <ClCompile Include="..\Common\src\TH\generic\simd\convolve5x5_avx.c" />
+    <ClCompile Include="..\Common\src\TH\generic\simd\convolve5x5_sse.c" />
+    <ClCompile Include="..\Common\src\TH\THAllocator.c" />
+    <ClCompile Include="..\Common\src\TH\THAtomic.c" />
+    <ClCompile Include="..\Common\src\TH\THBlas.c" />
+    <ClCompile Include="..\Common\src\TH\THDiskFile.c" />
+    <ClCompile Include="..\Common\src\TH\THFile.c" />
+    <ClCompile Include="..\Common\src\TH\THGeneral.c" />
+    <ClCompile Include="..\Common\src\TH\THHalf.c" />
+    <ClCompile Include="..\Common\src\TH\THLapack.c" />
+    <ClCompile Include="..\Common\src\TH\THLogAdd.c" />
+    <ClCompile Include="..\Common\src\TH\THMemoryFile.c" />
+    <ClCompile Include="..\Common\src\TH\THRandom.c" />
+    <ClCompile Include="..\Common\src\TH\THSize.c">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">USE_SSE4_1;USE_SSE4_2;__AVX__;__AVX2__;USE_AVX2;USE_AVX;USE_SSE3;USE_SSE2;WIN32;_WINDOWS;USE_GCC_GET_CPUID;TH_HAVE_THREAD;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;USE_MSC_ATOMICS=1;CMAKE_INTDIR="Release";TH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">USE_SSE4_1;USE_SSE4_2;__AVX__;__AVX2__;USE_AVX2;USE_AVX;USE_SSE3;USE_SSE2;WIN32;_WINDOWS;USE_GCC_GET_CPUID;TH_HAVE_THREAD;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;USE_MSC_ATOMICS=1;CMAKE_INTDIR="Release";TH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">USE_SSE4_1;USE_SSE4_2;__AVX__;__AVX2__;USE_AVX2;USE_AVX;USE_SSE3;USE_SSE2;WIN32;_WINDOWS;USE_GCC_GET_CPUID;TH_HAVE_THREAD;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;USE_MSC_ATOMICS=1;CMAKE_INTDIR="Release";TH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">USE_SSE4_1;USE_SSE4_2;__AVX__;__AVX2__;USE_AVX2;USE_AVX;USE_SSE3;USE_SSE2;WIN32;_WINDOWS;USE_GCC_GET_CPUID;TH_HAVE_THREAD;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;USE_MSC_ATOMICS=1;CMAKE_INTDIR="Release";TH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\TH\THStorage.c" />
+    <ClCompile Include="..\Common\src\TH\THTensor.c" />
+    <ClCompile Include="..\Common\src\TH\THVector.c" />
+    <ClCompile Include="..\Common\src\TH\vector\AVX.c" />
+    <ClCompile Include="..\Common\src\TH\vector\AVX2.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
