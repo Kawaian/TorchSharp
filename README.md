@@ -2,8 +2,8 @@
 A C# port of the [**Torch**](https://github.com/torch/torch7) deep learning library.
 
 ## Features:
-- **LuaJIT** support
-- **Xamarin** support: Android, UWP
+- [ ] **LuaJIT** support
+- [ ] **Xamarin** support: Android, UWP
 
 ## Credit:
 - Copyright holders of the **Torch** project.
