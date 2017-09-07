@@ -1017,7 +1017,9 @@ static void luaT_pushpointer(lua_State *L, const void *ptr)
   // 2^53 - this assumes that lua_Number is a double
   if ((uintptr_t)ptr > 9007199254740992LLU)
     luaL_error(L, "Pointer value can't be represented as a Lua number (an overflow would occur)");
-  lua_pushnumber(L, (uintptr_t)(ptr));
+
+  // @MattMatt2000: Added cast to luaNumber, so no warnings are issued on x64 builds.
+  lua_pushnumber(L, (lua_Number)((uintptr_t)(ptr)));
 #endif
 }
 
