@@ -70,25 +70,25 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)\external\include\lua;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)\external\lib\x86;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\build\Bin\$(Configuration)\x86\</OutDir>
     <IntDir>$(SolutionDir)\build\Obj\$(Configuration)\x86\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)\external\include\lua;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)\external\lib\x86;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\build\Bin\$(Configuration)\x86\</OutDir>
     <IntDir>$(SolutionDir)\build\Obj\$(Configuration)\x86\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)\external\include\lua;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)\external\lib\x64;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\build\Bin\$(Configuration)\x64\</OutDir>
     <IntDir>$(SolutionDir)\build\Obj\$(Configuration)\x64\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)\external\include\lua;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)\external\lib\x64;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)\build\Bin\$(Configuration)\x64\</OutDir>
     <IntDir>$(SolutionDir)\build\Obj\$(Configuration)\x64\$(ProjectName)\</IntDir>
@@ -98,7 +98,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\external\include\lua;$(SolutionDir)\src\Common\include\luaT</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\Common\include\luaT</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;luaT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018; 4267</DisableSpecificWarnings>
     </ClCompile>
@@ -112,7 +112,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\external\include\lua;$(SolutionDir)\src\Common\include\luaT</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\Common\include\luaT</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;luaT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018; 4267</DisableSpecificWarnings>
     </ClCompile>
@@ -128,7 +128,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\external\include\lua;$(SolutionDir)\src\Common\include\luaT</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\Common\include\luaT</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;luaT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018; 4267</DisableSpecificWarnings>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -147,7 +147,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\external\include\lua;$(SolutionDir)\src\Common\include\luaT</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\Common\include\luaT</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE=1;luaT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4018; 4267</DisableSpecificWarnings>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
