@@ -3,7 +3,6 @@ A C# port of the [**Torch**](https://github.com/torch/torch7) deep learning libr
 
 ## Features:
 - [x] **LuaJIT** support
-- [ ] **Static library** support: only lua/luaJIT and the C# wrapper are compiled as a dll
 - [ ] **Xamarin support**: Android, UWP
 
 ## Credit:
