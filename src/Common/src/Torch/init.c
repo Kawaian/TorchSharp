@@ -1,6 +1,9 @@
 #include "general.h"
 #include "utils.h"
 
+// testing the C preprocessor
+#define impl_func_lol(x, y) int lol(int a) { return a; }
+
 extern void torch_utils_init(lua_State *L);
 extern void torch_random_init(lua_State *L);
 extern void torch_File_init(lua_State *L);
@@ -9,7 +12,6 @@ extern void torch_MemoryFile_init(lua_State *L);
 extern void torch_PipeFile_init(lua_State *L);
 extern void torch_Timer_init(lua_State *L);
 
-// TODO(MattMatt2000): Find the implementation of these functions
 extern void torch_ByteStorage_init(lua_State *L);
 extern void torch_CharStorage_init(lua_State *L);
 extern void torch_ShortStorage_init(lua_State *L);
@@ -52,31 +54,31 @@ int luaopen_libtorch(lua_State *L)
   torch_utils_init(L);
   torch_File_init(L);
 
-  // torch_ByteStorage_init(L);
-  // torch_CharStorage_init(L);
-  // torch_ShortStorage_init(L);
-  // torch_IntStorage_init(L);
-  // torch_LongStorage_init(L);
-  // torch_FloatStorage_init(L);
-  // torch_DoubleStorage_init(L);
-  // torch_HalfStorage_init(L);
-  // 
-  // torch_ByteTensor_init(L);
-  // torch_CharTensor_init(L);
-  // torch_ShortTensor_init(L);
-  // torch_IntTensor_init(L);
-  // torch_LongTensor_init(L);
-  // torch_FloatTensor_init(L);
-  // torch_DoubleTensor_init(L);
-  // torch_HalfTensor_init(L);
-  // 
-  // torch_ByteTensorOperator_init(L);
-  // torch_CharTensorOperator_init(L);
-  // torch_ShortTensorOperator_init(L);
-  // torch_IntTensorOperator_init(L);
-  // torch_LongTensorOperator_init(L);
-  // torch_FloatTensorOperator_init(L);
-  // torch_DoubleTensorOperator_init(L);
+  torch_ByteStorage_init(L);
+  torch_CharStorage_init(L);
+  torch_ShortStorage_init(L);
+  torch_IntStorage_init(L);
+  torch_LongStorage_init(L);
+  torch_FloatStorage_init(L);
+  torch_DoubleStorage_init(L);
+  torch_HalfStorage_init(L);
+
+  torch_ByteTensor_init(L);
+  torch_CharTensor_init(L);
+  torch_ShortTensor_init(L);
+  torch_IntTensor_init(L);
+  torch_LongTensor_init(L);
+  torch_FloatTensor_init(L);
+  torch_DoubleTensor_init(L);
+  torch_HalfTensor_init(L);
+
+  torch_ByteTensorOperator_init(L);
+  torch_CharTensorOperator_init(L);
+  torch_ShortTensorOperator_init(L);
+  torch_IntTensorOperator_init(L);
+  torch_LongTensorOperator_init(L);
+  torch_FloatTensorOperator_init(L);
+  torch_DoubleTensorOperator_init(L);
 
   torch_Timer_init(L);
   torch_DiskFile_init(L);

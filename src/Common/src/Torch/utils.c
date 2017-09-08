@@ -1,8 +1,7 @@
 #include "general.h"
 #include "utils.h"
 
-// @MattMatt2000: Quick fix - Changed WIN32 to _WIN32
-#ifdef _WIN32
+#ifdef WIN32
 # include <time.h>
 #else
 # include <sys/time.h>

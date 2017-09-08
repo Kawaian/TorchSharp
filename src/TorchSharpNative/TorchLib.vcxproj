@@ -234,26 +234,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Common\src\Torch\autogen\Random.c" />
-    <ClCompile Include="..\Common\src\Torch\autogen\TensorMath.c" />
-    <ClCompile Include="..\Common\src\Torch\DiskFile.c" />
-    <ClCompile Include="..\Common\src\Torch\File.c" />
-    <ClCompile Include="..\Common\src\Torch\Generator.c" />
-    <ClCompile Include="..\Common\src\Torch\init.c" />
-    <ClCompile Include="..\Common\src\Torch\MemoryFile.c" />
-    <ClCompile Include="..\Common\src\Torch\PipeFile.c" />
-    <ClCompile Include="..\Common\src\Torch\Storage.c" />
-    <ClCompile Include="..\Common\src\Torch\TensorOperator.c" />
-    <ClCompile Include="..\Common\src\Torch\Timer.c" />
-    <ClCompile Include="..\Common\src\Torch\utils.c" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="LuaTLib.vcxproj">
       <Project>{e5596a3f-e1aa-41a6-bfe3-3bf6b36fe31e}</Project>
     </ProjectReference>
     <ProjectReference Include="THLib.vcxproj">
       <Project>{fc9f8a63-c24e-4437-95a2-637967ed7ea2}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\src\Torch\DiskFile.c" />
+    <ClCompile Include="..\Common\src\Torch\File.c" />
+    <ClCompile Include="..\Common\src\Torch\Generator.c" />
+    <ClCompile Include="..\Common\src\Torch\init.c" />
+    <ClCompile Include="..\Common\src\Torch\MemoryFile.c" />
+    <ClCompile Include="..\Common\src\Torch\PipeFile.c" />
+    <ClCompile Include="..\Common\src\Torch\Random.c" />
+    <ClCompile Include="..\Common\src\Torch\Storage.c" />
+    <ClCompile Include="..\Common\src\Torch\Tensor.c" />
+    <ClCompile Include="..\Common\src\Torch\TensorMath.c" />
+    <ClCompile Include="..\Common\src\Torch\TensorOperator.c" />
+    <ClCompile Include="..\Common\src\Torch\Timer.c" />
+    <ClCompile Include="..\Common\src\Torch\utils.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

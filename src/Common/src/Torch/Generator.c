@@ -1,4 +1,4 @@
-#include <general.h>
+#include "general.h"
 
 int torch_Generator_new(lua_State *L)
 {

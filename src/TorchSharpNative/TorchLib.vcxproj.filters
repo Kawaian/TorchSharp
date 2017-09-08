@@ -5,9 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source Files\autogen">
-      <UniqueIdentifier>{88455d0f-1fb7-4640-ad6e-8d1742af6b3a}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Common\src\Torch\DiskFile.c">
@@ -22,13 +19,19 @@
     <ClCompile Include="..\Common\src\Torch\init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\src\Torch\MemoryFile.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\Common\src\Torch\PipeFile.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Common\src\Torch\Random.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\Common\src\Torch\Storage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\Torch\Tensor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\Torch\TensorMath.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\Common\src\Torch\TensorOperator.c">
@@ -40,11 +43,8 @@
     <ClCompile Include="..\Common\src\Torch\utils.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Common\src\Torch\autogen\Random.c">
-      <Filter>Source Files\autogen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\src\Torch\autogen\TensorMath.c">
-      <Filter>Source Files\autogen</Filter>
+    <ClCompile Include="..\Common\src\Torch\MemoryFile.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
