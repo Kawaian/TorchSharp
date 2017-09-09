@@ -6,5 +6,5 @@ A C# port of the [**Torch**](https://github.com/torch/torch7) deep learning libr
 - [ ] **Xamarin support**: Android, UWP
 
 ## Credit:
-- Copyright holders of the **Torch** project.
+- Copyright holders of the [**Torch**](https://github.com/torch/torch7) project.
 - My shoveling partner, gmlwns2000 (AinL). Thanks for everything :3
