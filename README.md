@@ -3,6 +3,7 @@ A C# port of the [**Torch**](https://github.com/torch/torch7) deep learning libr
 
 ## Features:
 - [x] **LuaJIT** support
+- [ ] **C#** Wrapper support
 - [ ] **Xamarin support**: Android, UWP
 
 ## Credit:
